@@ -19,7 +19,7 @@ class Card_Page extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(10.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -45,10 +45,13 @@ class Card_Page extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.orange),
-                    child: Icon(
-                      Icons.add,
-                      color: Colors.white,
-                      size: 28,
+                    child: Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Icon(
+                        Icons.add,
+                        color: Colors.white,
+                        size: 20,
+                      ),
                     )),
               ],
             ),
@@ -58,7 +61,7 @@ class Card_Page extends StatelessWidget {
             child: Card(
               shape:
                   OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
-              color: Colors.blue.shade900,
+              color: Colors.blueAccent.shade400,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -113,7 +116,7 @@ class Card_Page extends StatelessWidget {
                           child: Container(
                             child: Column(
                               children: [
-                                Image.asset("images/mastercard-26132.png",
+                                Image.asset("assets/images/mastercard-26132.png",
                                     width: 80),
                               ],
                             ),
