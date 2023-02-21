@@ -40,7 +40,7 @@ class _Home_pahgeState extends State<Home_pahge> {
           Padding(
             padding: EdgeInsets.all(10.0),
             child: CircleAvatar(
-              backgroundImage: AssetImage("images/boy.jfif"),
+              backgroundImage: AssetImage("assets/images/boy.jfif"),
               radius: 20,
             ),
           )
@@ -74,7 +74,7 @@ class _Home_pahgeState extends State<Home_pahge> {
               padding: const EdgeInsets.all(8.0),
               child: Card(
                 elevation: 10,
-                color: Colors.grey.shade700,
+                color: Colors.grey.shade800,
                 shape:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
                 child: Row(
@@ -83,6 +83,8 @@ class _Home_pahgeState extends State<Home_pahge> {
                       Padding(
                         padding: const EdgeInsets.all(30.0),
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               "Jun 14, 2020 \n",
@@ -101,7 +103,7 @@ class _Home_pahgeState extends State<Home_pahge> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(right: 60),
+                        padding: const EdgeInsets.only(right: 40),
                         child: Row(children: [
                           Text(
                             "15%",
@@ -129,16 +131,19 @@ class _Home_pahgeState extends State<Home_pahge> {
                   children: [
                     Container(
 
-                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.grey.shade700,),
+                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.grey.shade800,),
                       child: Container(
                         child: Column(
                           children: [
                             Container(
-                                child: Icon(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Icon(
                               Icons.arrow_upward_outlined,
                               color: Colors.pink,
                               size: 40,
-                            )),
+                            ),
+                                )),
                             Container(
                                 child: Text("Send",
                                     style: TextStyle(color: Colors.white)))
@@ -147,15 +152,18 @@ class _Home_pahgeState extends State<Home_pahge> {
                       ),
                     ),
                     Container(
-                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.grey.shade700,),
+                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.grey.shade800,),
                       child: Column(
                         children: [
                           Container(
-                              child: Icon(
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Icon(
                             Icons.arrow_downward_outlined,
                             color: Colors.green,
                             size: 40,
-                          )),
+                          ),
+                              )),
                           Container(
                             child: Text("Receive",
                                 style: TextStyle(color: Colors.white)),
@@ -164,15 +172,18 @@ class _Home_pahgeState extends State<Home_pahge> {
                       ),
                     ),
                     Container(
-                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.grey.shade700,),
+                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.grey.shade800,),
                       child: Column(
                         children: [
                           Container(
-                              child: Icon(
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Icon(
                             Icons.local_atm,
                             color: Colors.orangeAccent,
                             size: 40,
-                          )),
+                          ),
+                              )),
                           Container(
                               child: Text("Loan",
                                   style: TextStyle(color: Colors.white)))
@@ -180,15 +191,18 @@ class _Home_pahgeState extends State<Home_pahge> {
                       ),
                     ),
                     Container(
-                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.grey.shade700,),
+                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.grey.shade800,),
                       child: Column(
                         children: [
                           Container(
-                              child: Icon(
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Icon(
                             Icons.cloud_upload,
                             color: Colors.blueAccent,
                             size: 40,
-                          )),
+                          ),
+                              )),
                           Container(
                               child: Text(
                             "Topup",
@@ -212,9 +226,9 @@ class _Home_pahgeState extends State<Home_pahge> {
                 )),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 100.0),
+                padding: const EdgeInsets.all(10.0),
                 child: Card(
-                    color: Colors.grey.shade700,
+                    color: Colors.grey.shade800,
                     shape: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20)),
                     child: Padding(
@@ -269,7 +283,7 @@ class ChartSection extends StatelessWidget {
     return Container(
       color: Colors.black,
       height: 250,
-      width: 370,
+      width: 350,
       child:
         BarChart(BarChartData(backgroundColor: Colors.black,barGroups: [
           BarChartGroupData(
